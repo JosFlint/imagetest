@@ -1,0 +1,28 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000;
+}
+
+.video-container {
+    position: relative;
+    overflow: hidden;
+}
+
+video {
+    width: 100vw;  /* Full width of the viewport */
+    height: auto;  /* Maintain aspect ratio */
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw; /* Match the video width */
+    height: auto; /* Maintain aspect ratio */
+    mix-blend-mode: multiply; /* Apply Multiply blend mode */
+    pointer-events: none; /* Allow clicks to pass through the overlay */
+}
